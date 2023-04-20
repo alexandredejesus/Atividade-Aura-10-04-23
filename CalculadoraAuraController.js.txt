@@ -1,0 +1,33 @@
+({
+    sum : function(component, event, helper) {
+        var n1= component.find("txt1").get("v.value");
+        var n2= component.find("txt2").get("v.value");
+        var v = parseInt(n1)+parseInt(n2);
+        component.set("v.actionName", "Adição");
+        component.set("v.result", v);
+    },
+
+    sub : function(component, event, helper) {
+        var n1= component.find("txt1").get("v.value");
+        var n2= component.find("txt2").get("v.value");
+        var v = parseInt(n1)-parseInt(n2);
+        component.set("v.actionName", "Subtração");
+        component.set("v.result", v);
+    },
+
+    mul : function(component, event, helper) {
+        var n1= component.find("txt1").get("v.value");
+        var n2= component.find("txt2").get("v.value");
+        var v = parseInt(n1)*parseInt(n2);
+        component.set("v.actionName", "Multiplicação");
+        component.set("v.result", v);
+    },
+
+    div : function(component, event, helper) {
+        var n1= component.find("txt1").get("v.value");
+        var n2= component.find("txt2").get("v.value");
+        var v = parseInt(n1)/parseInt(n2);
+        component.set("v.actionName", "Divisão");
+        component.set("v.result", v);
+    }
+})

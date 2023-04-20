@@ -1,0 +1,20 @@
+.THIS {
+     text-align: ;
+}
+
+.THIS{
+    color: blue;
+    text-align:right;
+    
+}
+
+
+.THIS {
+     background-color: #b0c2f2;
+}
+
+.THIS .cor {
+     background-color: #fdcae1;
+}
+
+

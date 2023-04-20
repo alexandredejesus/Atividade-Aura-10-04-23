@@ -1,0 +1,20 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="result" type="Integer" ></aura:attribute>
+    <aura:attribute name="acao"      type="String" ></aura:attribute>
+    
+    <div class="slds-theme--background" >
+    <lightning:card class="titulo" title="Calculadora">
+    
+        <lightning:input placeholder="Insira o 1º número" aura:id="txt1"/>
+        <br/>
+         <lightning:input placeholder="Insira o 2º número" aura:id="txt2"/>
+         <br/>
+        <lightning:button variant="brand" label="Adição"        title="somar" onclick="{! c.sum }" />
+        <lightning:button variant="brand" label="Subtração"     title="sub" onclick="{! c.sub }" />
+        <lightning:button variant="brand" label="Multiplicação" title="mul" onclick="{! c.mul }" />
+        <lightning:button variant="brand" label="Divisão"       title="div" onclick="{! c.div }" />
+        <br/>
+        {!v.acao}: {!v.result}
+    </lightning:card>
+         </div> 
+</aura:component>
